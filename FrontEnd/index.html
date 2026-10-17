@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#0b172b" name="theme-color"/>
+  <title>
+   Depot Dynamics | Gestão logística
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/upgrade.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="shell">
+   <aside class="side">
+    <div class="branding">
+     <img alt="Depot Dynamics" src="assets/logo-depot.png"/>
+     <p>
+      Gestão logística · WMS
+     </p>
+    </div>
+    <div class="navtitle">
+     OPERAÇÃO
+    </div>
+    <button class="active" data-view="inicio">
+     ◫   Visão geral
+    </button>
+    <button data-view="recebimento">
+     ⇣   Recebimento
+    </button>
+    <button data-view="expedicao">
+     ⇡   Pedidos e expedição
+    </button>
+    <button data-view="estoque">
+     ▦   Posição de estoque
+    </button>
+    <button data-view="historico">
+     ◷   Rastreabilidade
+    </button>
+    <div class="navtitle">
+     GESTÃO E CONTROLE
+    </div>
+    <button data-view="produtos">
+     ▤   Produtos e lotes
+    </button>
+    <button data-view="compras">
+     ▣   Compras
+    </button>
+    <button data-view="reservas">
+     ▧   Reservas
+    </button>
+    <button data-view="movimentacoes">
+     ↔   Movimentações
+    </button>
+    <button data-view="aprovacoes">
+     ✓   Aprovações
+    </button>
+    <button data-view="transportes">
+     ♧   Transporte e entregas
+    </button>
+    <button data-view="ocorrencias">
+     ⚑   Ocorrências e devoluções
+    </button>
+    <div class="navtitle">
+     ADMINISTRAÇÃO
+    </div>
+    <button data-view="parceiros">
+     ♙   Clientes e fornecedores
+    </button>
+    <button data-view="locais">
+     ⌖   Armazéns e locais
+    </button>
+    <button data-view="usuarios">
+     ♙   Usuários e perfis
+    </button>
+    <button data-view="relatorios">
+     ▥   Relatórios
+    </button>
+    <button data-view="config">
+     ⚙   Configurações
+    </button>
+    <div class="sidefoot">
+     FRONT-END DEMONSTRATIVO
+     <br/>
+     Dados locais · sem servidor
+    </div>
+   </aside>
+   <main class="main">
+    <header class="top">
+     <div>
+      <div class="eyebrow">
+       DEPOT DYNAMICS / CENTRAL OPERACIONAL
+      </div>
+      <h1 id="heading">
+       Visão geral
+      </h1>
+     </div>
+     <div class="top-actions">
+      <span class="chip">
+       ● Ambiente de demonstração
+      </span>
+      <button class="btn secondary" onclick="nav('relatorios')">
+       Relatórios ↗
+      </button>
+     </div>
+    </header>
+    <div id="app">
+    </div>
+   </main>
+  </div>
+  <div aria-live="polite" id="toast" role="status">
+  </div>
+  <script src="js/modules.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
+
